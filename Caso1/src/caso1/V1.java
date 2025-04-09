@@ -111,13 +111,17 @@ public class V1 extends JFrame implements ActionListener {
 		}
 		{
 			scrollPane = new JScrollPane();
-			scrollPane.setBounds(10, 115, 391, 135);
+			scrollPane.setBounds(10, 126, 391, 124);
 			contentPane.add(scrollPane);
 			{
 				txtS = new JTextArea();
 				scrollPane.setViewportView(txtS);
 			}
 		}
+		
+		JButton btnNewButton_1 = new JButton("borrar");
+		btnNewButton_1.setBounds(10, 96, 89, 23);
+		contentPane.add(btnNewButton_1);
 	}
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == btnSumarDosReales) {
